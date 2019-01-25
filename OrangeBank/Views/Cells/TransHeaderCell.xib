@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Header" rowHeight="166" id="Cgv-9f-9zE" userLabel="Trans Header Cell" customClass="TransHeaderCell" customModule="OrangeBank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cgv-9f-9zE" id="3Id-O4-zc1">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="165.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15-10-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHX-yE-mUv" userLabel="Date">
+                        <rect key="frame" x="16" y="8" width="70.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="STN-vm-jEY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" red="0.8980392157" green="0.52941176469999995" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Deo-Iw-0CS" userLabel="Description">
+                        <rect key="frame" x="16" y="32" width="343" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="tA5-2h-ZHZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" white="0.0" alpha="0.54052046654929575" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.00€" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zoo-Vb-Fh6" userLabel="Amount">
+                        <rect key="frame" x="24" y="90" width="99.5" height="35.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                        <color key="textColor" white="0.0" alpha="0.87246919014084512" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Comisión: -1.00€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1I-0y-Trh" userLabel="Fee">
+                        <rect key="frame" x="24" y="133.5" width="103.5" height="16"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="0.87062610035211263" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.98431372549999996" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Deo-Iw-0CS" secondAttribute="trailing" constant="16" id="1FV-Te-3aS"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zoo-Vb-Fh6" secondAttribute="trailing" constant="16" id="2Ad-yc-XMh"/>
+                    <constraint firstItem="Deo-Iw-0CS" firstAttribute="top" secondItem="nHX-yE-mUv" secondAttribute="bottom" constant="8" id="Cik-bc-3qP"/>
+                    <constraint firstItem="Zoo-Vb-Fh6" firstAttribute="leading" secondItem="3Id-O4-zc1" secondAttribute="leading" constant="24" id="Hz9-ou-GrB"/>
+                    <constraint firstItem="nHX-yE-mUv" firstAttribute="leading" secondItem="3Id-O4-zc1" secondAttribute="leading" constant="16" id="NOx-q8-jWa"/>
+                    <constraint firstItem="Deo-Iw-0CS" firstAttribute="leading" secondItem="3Id-O4-zc1" secondAttribute="leading" constant="16" id="NkH-kf-Ioe"/>
+                    <constraint firstItem="nHX-yE-mUv" firstAttribute="top" secondItem="3Id-O4-zc1" secondAttribute="top" constant="8" id="Syv-Ix-Mdo"/>
+                    <constraint firstAttribute="bottom" secondItem="l1I-0y-Trh" secondAttribute="bottom" constant="16" id="U0l-QC-KaL"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nHX-yE-mUv" secondAttribute="trailing" constant="16" id="amD-6W-mjg"/>
+                    <constraint firstItem="l1I-0y-Trh" firstAttribute="leading" secondItem="3Id-O4-zc1" secondAttribute="leading" constant="24" id="cv3-y1-XcG"/>
+                    <constraint firstItem="Zoo-Vb-Fh6" firstAttribute="top" secondItem="Deo-Iw-0CS" secondAttribute="bottom" constant="16" id="fzz-PK-36s"/>
+                    <constraint firstItem="l1I-0y-Trh" firstAttribute="top" secondItem="Zoo-Vb-Fh6" secondAttribute="bottom" constant="8" id="mrq-9k-4I1"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="l1I-0y-Trh" secondAttribute="trailing" constant="16" id="tce-jw-yv1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_amount" destination="Zoo-Vb-Fh6" id="4mJ-ab-qNs"/>
+                <outlet property="_date" destination="nHX-yE-mUv" id="n9L-dD-80A"/>
+                <outlet property="_description" destination="Deo-Iw-0CS" id="z7q-Sy-3kD"/>
+                <outlet property="_fee" destination="l1I-0y-Trh" id="re7-qh-shV"/>
+            </connections>
+            <point key="canvasLocation" x="133.59999999999999" y="-44.07796101949026"/>
+        </tableViewCell>
+    </objects>
+</document>

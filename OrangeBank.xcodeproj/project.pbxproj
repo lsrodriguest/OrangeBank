@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77C6B8E9F95D85A2FBF9B500 /* Pods_OrangeBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4A78E64FA8CADFB2005DAE /* Pods_OrangeBank.framework */; };
+		A0029F00219C3F31004CB837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0029EFF219C3F31004CB837 /* AppDelegate.swift */; };
+		A0029F02219C3F31004CB837 /* TransVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0029F01219C3F31004CB837 /* TransVC.swift */; };
+		A0029F05219C3F31004CB837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0029F03219C3F31004CB837 /* Main.storyboard */; };
+		A0029F07219C3F33004CB837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0029F06219C3F33004CB837 /* Assets.xcassets */; };
+		A0029F0A219C3F33004CB837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0029F08219C3F33004CB837 /* LaunchScreen.storyboard */; };
+		A0029F12219C4CB6004CB837 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0029F11219C4CB6004CB837 /* Config.swift */; };
+		A0029F1B219C58D3004CB837 /* TransHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0029F1A219C58D3004CB837 /* TransHeaderCell.xib */; };
+		A0029F1D219C5C7E004CB837 /* TransCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0029F1C219C5C7E004CB837 /* TransCell.xib */; };
+		A0029F1F219C6458004CB837 /* TransCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0029F1E219C6458004CB837 /* TransCell.swift */; };
+		A0029F21219C6613004CB837 /* TransHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0029F20219C6613004CB837 /* TransHeaderCell.swift */; };
+		A0029F23219C67AF004CB837 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0029F22219C67AF004CB837 /* Transaction.swift */; };
+		A0029F25219C67DF004CB837 /* TransAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0029F24219C67DF004CB837 /* TransAPI.swift */; };
+		A0029F28219C93A6004CB837 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0029F27219C93A6004CB837 /* UIColor.swift */; };
+		A0029F2A219CC6D3004CB837 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0029F29219CC6D3004CB837 /* Array.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C4A78E64FA8CADFB2005DAE /* Pods_OrangeBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0029EFC219C3F31004CB837 /* OrangeBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0029EFF219C3F31004CB837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0029F01219C3F31004CB837 /* TransVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransVC.swift; sourceTree = "<group>"; };
+		A0029F04219C3F31004CB837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0029F06219C3F33004CB837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0029F09219C3F33004CB837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0029F0B219C3F33004CB837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0029F11219C4CB6004CB837 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A0029F1A219C58D3004CB837 /* TransHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransHeaderCell.xib; sourceTree = "<group>"; };
+		A0029F1C219C5C7E004CB837 /* TransCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransCell.xib; sourceTree = "<group>"; };
+		A0029F1E219C6458004CB837 /* TransCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransCell.swift; sourceTree = "<group>"; };
+		A0029F20219C6613004CB837 /* TransHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransHeaderCell.swift; sourceTree = "<group>"; };
+		A0029F22219C67AF004CB837 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		A0029F24219C67DF004CB837 /* TransAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransAPI.swift; sourceTree = "<group>"; };
+		A0029F27219C93A6004CB837 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A0029F29219CC6D3004CB837 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		CA5F18132F0DAFEADE7349EE /* Pods-OrangeBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeBank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrangeBank/Pods-OrangeBank.debug.xcconfig"; sourceTree = "<group>"; };
+		D44E5FBCFAC95E8435E7BB39 /* Pods-OrangeBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeBank.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrangeBank/Pods-OrangeBank.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0029EF9219C3F31004CB837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77C6B8E9F95D85A2FBF9B500 /* Pods_OrangeBank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		392AC3297858BC403C04EE31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C4A78E64FA8CADFB2005DAE /* Pods_OrangeBank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9891DDD1FAAB126F6D6FFBC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA5F18132F0DAFEADE7349EE /* Pods-OrangeBank.debug.xcconfig */,
+				D44E5FBCFAC95E8435E7BB39 /* Pods-OrangeBank.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A0029EF3219C3F31004CB837 = {
+			isa = PBXGroup;
+			children = (
+				A0029EFE219C3F31004CB837 /* OrangeBank */,
+				A0029EFD219C3F31004CB837 /* Products */,
+				9891DDD1FAAB126F6D6FFBC2 /* Pods */,
+				392AC3297858BC403C04EE31 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0029EFD219C3F31004CB837 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0029EFC219C3F31004CB837 /* OrangeBank.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0029EFE219C3F31004CB837 /* OrangeBank */ = {
+			isa = PBXGroup;
+			children = (
+				A0029EFF219C3F31004CB837 /* AppDelegate.swift */,
+				A0029F11219C4CB6004CB837 /* Config.swift */,
+				A0029F06219C3F33004CB837 /* Assets.xcassets */,
+				A0029F0B219C3F33004CB837 /* Info.plist */,
+				A0029F16219C4DCF004CB837 /* Controllers */,
+				A0029F26219C938F004CB837 /* Helpers */,
+				A0029F13219C4D77004CB837 /* Models */,
+				A0029F14219C4D97004CB837 /* Views */,
+			);
+			path = OrangeBank;
+			sourceTree = "<group>";
+		};
+		A0029F13219C4D77004CB837 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0029F15219C4DB2004CB837 /* API Parameter Abstraction */,
+				A0029F22219C67AF004CB837 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0029F14219C4D97004CB837 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0029F17219C57D7004CB837 /* Cells */,
+				A0029F08219C3F33004CB837 /* LaunchScreen.storyboard */,
+				A0029F03219C3F31004CB837 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0029F15219C4DB2004CB837 /* API Parameter Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				A0029F24219C67DF004CB837 /* TransAPI.swift */,
+			);
+			path = "API Parameter Abstraction";
+			sourceTree = "<group>";
+		};
+		A0029F16219C4DCF004CB837 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0029F1E219C6458004CB837 /* TransCell.swift */,
+				A0029F20219C6613004CB837 /* TransHeaderCell.swift */,
+				A0029F01219C3F31004CB837 /* TransVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A0029F17219C57D7004CB837 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A0029F1A219C58D3004CB837 /* TransHeaderCell.xib */,
+				A0029F1C219C5C7E004CB837 /* TransCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A0029F26219C938F004CB837 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A0029F29219CC6D3004CB837 /* Array.swift */,
+				A0029F27219C93A6004CB837 /* UIColor.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0029EFB219C3F31004CB837 /* OrangeBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0029F0E219C3F33004CB837 /* Build configuration list for PBXNativeTarget "OrangeBank" */;
+			buildPhases = (
+				9488DE9D11BA41A4B922F637 /* [CP] Check Pods Manifest.lock */,
+				A0029EF8219C3F31004CB837 /* Sources */,
+				A0029EF9219C3F31004CB837 /* Frameworks */,
+				A0029EFA219C3F31004CB837 /* Resources */,
+				B486FCF762F903366AFFF0FE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrangeBank;
+			productName = OrangeBank;
+			productReference = A0029EFC219C3F31004CB837 /* OrangeBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0029EF4219C3F31004CB837 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Luis Rodrigues";
+				TargetAttributes = {
+					A0029EFB219C3F31004CB837 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = A0029EF7219C3F31004CB837 /* Build configuration list for PBXProject "OrangeBank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0029EF3219C3F31004CB837;
+			productRefGroup = A0029EFD219C3F31004CB837 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0029EFB219C3F31004CB837 /* OrangeBank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0029EFA219C3F31004CB837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0029F1B219C58D3004CB837 /* TransHeaderCell.xib in Resources */,
+				A0029F0A219C3F33004CB837 /* LaunchScreen.storyboard in Resources */,
+				A0029F07219C3F33004CB837 /* Assets.xcassets in Resources */,
+				A0029F1D219C5C7E004CB837 /* TransCell.xib in Resources */,
+				A0029F05219C3F31004CB837 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9488DE9D11BA41A4B922F637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrangeBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B486FCF762F903366AFFF0FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OrangeBank/Pods-OrangeBank-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
+				"${BUILT_PRODUCTS_DIR}/UnboxedAlamofire/UnboxedAlamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UnboxedAlamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrangeBank/Pods-OrangeBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0029EF8219C3F31004CB837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0029F2A219CC6D3004CB837 /* Array.swift in Sources */,
+				A0029F02219C3F31004CB837 /* TransVC.swift in Sources */,
+				A0029F00219C3F31004CB837 /* AppDelegate.swift in Sources */,
+				A0029F23219C67AF004CB837 /* Transaction.swift in Sources */,
+				A0029F1F219C6458004CB837 /* TransCell.swift in Sources */,
+				A0029F25219C67DF004CB837 /* TransAPI.swift in Sources */,
+				A0029F28219C93A6004CB837 /* UIColor.swift in Sources */,
+				A0029F21219C6613004CB837 /* TransHeaderCell.swift in Sources */,
+				A0029F12219C4CB6004CB837 /* Config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A0029F03219C3F31004CB837 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0029F04219C3F31004CB837 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0029F08219C3F33004CB837 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0029F09219C3F33004CB837 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0029F0C219C3F33004CB837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0029F0D219C3F33004CB837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0029F0F219C3F33004CB837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA5F18132F0DAFEADE7349EE /* Pods-OrangeBank.debug.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "https://api.myjson.com";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = OrangeBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.OrangeBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0029F10219C3F33004CB837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D44E5FBCFAC95E8435E7BB39 /* Pods-OrangeBank.release.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "https://api.myjson.com";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = OrangeBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.OrangeBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0029EF7219C3F31004CB837 /* Build configuration list for PBXProject "OrangeBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0029F0C219C3F33004CB837 /* Debug */,
+				A0029F0D219C3F33004CB837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0029F0E219C3F33004CB837 /* Build configuration list for PBXNativeTarget "OrangeBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0029F0F219C3F33004CB837 /* Debug */,
+				A0029F10219C3F33004CB837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0029EF4219C3F31004CB837 /* Project object */;
+}
